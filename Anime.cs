@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Anime : MonoBehaviour {
 	public  Animator anim;
-	public static bool checkrun=false;
-	public static bool checkattack=false;
+	public static bool wolfrun=false;
+	public static bool wolfattack=false;
 	// Use this for initialization
 	void Start () {
 		anim.GetComponent("Animator");
@@ -12,7 +12,7 @@ public class Anime : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		anim.SetBool ("run", checkattack);
-		anim.SetBool("attack",checkrun);
+		anim.SetBool ("wolf_run", wolfattack);
+		anim.SetBool("wolf_att",wolfrun);
 	}
 }
